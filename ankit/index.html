@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padalia Classes</title>
+    <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="navbar">
+        <img src="logo.jpeg" alt="">
+        <div id="links">
+            <a href="#">Store</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="button">
+            <a href="#"><button class="btn">Pay</button></a>
+            <a href="#"><button class="btn">Login</button></a>
+        </div>
+    </nav>
+    <div id="banner">
+        <h1>Padalia Classes</h1>
+        <h2>"The more you learn , The more you earn"</h2>
+        <div id="social">
+            <a href="#">
+                <img src="telegram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="utube.svg" alt="">
+            </a>
+
+        </div>
+        <div id="input">
+            <input type="number" id="number" placeholder="Type Your Number">
+            <img src="flag.png" alt="">
+            <a href="#"><button>Get Started</button></a>
+        </div>
+        <img src="banner1.jpg" alt="" id="images">
+    </div>
+    <div id="important">
+        <div class="boxes" id="box1">
+            <h1>Our</br>Courses</h1>
+            <img src="books.png" alt="">
+            <p>Join Our Course Now</p>
+        </div>
+        <div class="boxes" id="box2">
+            <h1>Test</br>Series</h1>
+            <img src="chemicals.png" alt="">
+            <p>Improve Yourself With Our Tests.</p>
+
+
+
+        </div>
+        <div class="boxes" id="box3">
+            <h1>About</br>   us  </h1>
+            <img src="about.png" alt="">
+            <p>Want To Know About us </p>
+
+
+        </div>
+        <div class="boxes" id="box4">
+            <h1>Contact</br>Us</h1>
+            <img src="contact.png" alt="">
+            <p>Fell Free To Contact US.</p>
+
+
+        </div>
+    </div>
+    <div id="secondbox">
+        <div id="leftone">
+            <h1>Leave A Review</h1>
+            <textarea rows="5" cols="45" placeholder="Enter Your Review"></textarea>
+            <button>Submit Review</button>
+        </div>
+        <div id="rightone">
+            <h1>Get In Touch</h1>
+            <p>gali no-110 , near dk builders , khushal chowk , Santnagar , burari, New delhi, Delhi, 110084</p>
+            <div id="call">
+                <img src="call.png" alt=""><p>Help Desk - 9873394532</p>
+            </div>
+            <div id="mail">
+                <img src="email.png" alt=""><p>ankitpadalia@gmail.com</p>
+            </div>
+            <div id="contactbutton">
+                <button id="btn1">Call Us</button>
+                <button id="btn2">Mail Us</button>
+            </div>
+            <div id="download">
+                <h1>&#11088;</h1>
+                <h2>Download Our App</h2>
+                <p>Padalia classes is also available as an app
+                    on the play store.</p>
+                <a href="#">
+                    <img src="play store.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="fbox1" class="fbox">
+            <h1>Our Location</h1>
+            <p>gali no-110 , near dk builders , khushal chowk , Santnagar , burari, New delhi, Delhi, 110084</p>
+            <div id="contactbutton">
+                <button id="btn1">Call Us</button>
+                <button id="btn2">Mail Us</button>
+            </div>
+        </div>
+        <div id="fbox2"class="fbox">
+            <div id="input">
+                <input type="number" id="number" placeholder="Type Your Number">
+                <img src="flag.png" alt="">
+                <a href="#"><button>Get Started</button></a>
+            </div>
+            <div id="socialmedia">
+                <h1>Our Social Media Handles</h1>
+                <div id="icons">
+                    <a href="#">
+                        <img src="facebook.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="insta.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="twitter.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="fbox3" class="fbox">
+            <p>All Right reserved Under Copyright &copy; Year 2021-2025</p>
+        </div>
+        <div id="fbox4" class="fbox">
+            <p>This Website Is Designed By <b>@Sachin_Jha</b> </p>
+        </div>
+    </div>
+    <script>
+        var i=0;
+        var pics = ["banner1.jpg","banner2.jpg","banner3.jpg"]
+        function slide(){
+            document.getElementById("images").src = pics[i];
+            if (i<(pics.length-1)){
+                i++
+            }
+            else{
+                i=0
+            }
+
+        }
+        setInterval(slide,3000)
+    </script>
+</body>
+</html>
